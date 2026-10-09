@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "endpoints": [
+    {
+      "productId": "bb-tcg-mega-evolution-pitch-black-etb",
+      "site": "bestbuy",
+      "pollUrl": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-elite-trainer-box/JJG2TL8J45",
+      "measuredAt": 1791007845903,
+      "metadata": {
+        "contract": {
+          "availableWhen": [
+            { "path": "offers[0].availability", "equals": "https://schema.org/InStock" }
+          ],
+          "priceUnit": "dollars",
+          "fields": {
+            "priceCents": "offers[0].price",
+            "sku": "offers[0].sku",
+            "seller": "offers[0].seller.name",
+            "fulfillment": "offers[0].availableDeliveryMethod"
+          }
+        },
+        "note": "MEASURED 2026-10-03. Availability is in the JSON-LD Product object embedded in the product page HTML (script[type=application/ld+json]). The model.json API returns an empty atom; the real data is in the SSR HTML. price is in dollars (79.99), not cents — the adapter must multiply by 100. See tests/fixtures/bestbuy/in-stock.json."
+      }
+    },
+    {
+      "productId": "me-booster-display",
+      "site": "bestbuy",
+      "pollUrl": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-booster-box-36-packs/6639109",
+      "measuredAt": 1791154176000,
+      "metadata": {
+        "contract": {
+          "availableWhen": [
+            { "path": "offers[0].availability", "equals": "https://schema.org/InStock" }
+          ],
+          "priceUnit": "dollars",
+          "fields": {
+            "priceCents": "offers[0].price",
+            "sku": "offers[0].sku",
+            "seller": "offers[0].seller.name",
+            "fulfillment": "offers[0].availableDeliveryMethod"
+          }
+        },
+        "policy": { "maxPriceCents": 20000, "sellerEquals": "Best Buy" },
+        "note": "MEASURED 2026-10-04 from first-party JSON-LD Product data in the supplied Best Buy page."
+      }
+    },
+    {
+      "productId": "pe-super-premium",
+      "site": "bestbuy",
+      "pollUrl": "https://www.bestbuy.com/product/pokemon-trading-card-game-scarlet-violet-prismatic-evolutions-super-premium-collection/6621081",
+      "measuredAt": 1791154176000,
+      "metadata": {
+        "contract": {
+          "availableWhen": [
+            { "path": "offers[0].availability", "equals": "https://schema.org/InStock" }
+          ],
+          "priceUnit": "dollars",
+          "fields": {
+            "priceCents": "offers[0].price",
+            "sku": "offers[0].sku",
+            "seller": "offers[0].seller.name",
+            "fulfillment": "offers[0].availableDeliveryMethod"
+          }
+        },
+        "policy": { "maxPriceCents": 13000, "sellerEquals": "Best Buy" },
+        "note": "MEASURED 2026-10-04 from first-party JSON-LD Product data in the supplied Best Buy page."
+      }
+    },
+    {
+      "productId": "pe-etb",
+      "site": "bestbuy",
+      "pollUrl": "https://www.bestbuy.com/product/pokemon-trading-card-game-scarlet-violet-prismatic-evolutions-elite-trainer-box/6606082",
+      "measuredAt": 1791154176000,
+      "metadata": {
+        "contract": {
+          "availableWhen": [
+            { "path": "offers[0].availability", "equals": "https://schema.org/InStock" }
+          ],
+          "priceUnit": "dollars",
+          "fields": {
+            "priceCents": "offers[0].price",
+            "sku": "offers[0].sku",
+            "seller": "offers[0].seller.name",
+            "fulfillment": "offers[0].availableDeliveryMethod"
+          }
+        },
+        "policy": { "maxPriceCents": 6000, "sellerEquals": "Best Buy" },
+        "note": "MEASURED 2026-10-04 from first-party JSON-LD Product data in the supplied Best Buy page."
+      }
+    },
+    {
+      "productId": "phantasmal-flames-booster-display",
+      "site": "bestbuy",
+      "pollUrl": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-phantasmal-flames-booster-box-36-packs/6645341",
+      "measuredAt": 1791154176000,
+      "metadata": {
+        "contract": {
+          "availableWhen": [
+            { "path": "offers[0].availability", "equals": "https://schema.org/InStock" }
+          ],
+          "priceUnit": "dollars",
+          "fields": {
+            "priceCents": "offers[0].price",
+            "sku": "offers[0].sku",
+            "seller": "offers[0].seller.name",
+            "fulfillment": "offers[0].availableDeliveryMethod"
+          }
+        },
+        "policy": { "maxPriceCents": 19000, "sellerEquals": "Best Buy" },
+        "note": "MEASURED 2026-10-04 from first-party JSON-LD Product data in the supplied Best Buy page."
+      }
+    }
+  ]
+}

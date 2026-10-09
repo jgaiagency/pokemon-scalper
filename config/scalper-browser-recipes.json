@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "sites": {
+    "pokemon-center": null,
+    "tcgplayer": null,
+    "bestbuy": null,
+    "target": null
+  }
+}

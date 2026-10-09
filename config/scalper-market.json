@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "defaults": {
+    "acquisitionTaxRate": 0.0825,
+    "sellingFeeRate": 0.13,
+    "paymentFeeFlat": 0.30,
+    "outboundShipping": 9.00,
+    "minProfit": 15.00,
+    "minRoi": 0.20,
+    "minConfidence": 0.50
+  },
+  "officialReleaseSources": [
+    "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase"
+  ],
+  "products": [
+    {
+      "id": "30th-pokemon-center-etb",
+      "name": "30th Celebration Pokémon Center Elite Trainer Box",
+      "releaseDate": "2026-09-16",
+      "type": "elite-trainer-box",
+      "exclusive": "pokemon-center",
+      "acquisitionPrice": 59.99,
+      "acquisitionPriceBasis": "Pokemon Center listed price; verify at checkout",
+      "sources": {
+        "tcgplayer": { "skuId": null },
+        "ebay": { "query": "Pokemon 30th Celebration Pokemon Center Elite Trainer Box sealed" }
+      }
+    },
+    {
+      "id": "30th-booster-bundle",
+      "name": "30th Celebration Booster Bundle",
+      "releaseDate": "2026-10-02",
+      "type": "booster-bundle",
+      "acquisitionPrice": 26.94,
+      "acquisitionPriceBasis": "published US MSRP; verify at checkout",
+      "sources": {
+        "tcgplayer": { "productId": 704171, "skuId": null },
+        "ebay": { "query": "Pokemon 30th Celebration Booster Bundle sealed" }
+      }
+    },
+    {
+      "id": "30th-mini-tin",
+      "name": "30th Celebration Mini Tin",
+      "releaseDate": "2026-10-02",
+      "type": "mini-tin",
+      "acquisitionPrice": 9.99,
+      "acquisitionPriceBasis": "published US MSRP; verify at checkout",
+      "sources": {
+        "tcgplayer": { "skuId": null },
+        "ebay": { "query": "Pokemon 30th Celebration Mini Tin sealed" }
+      }
+    },
+    {
+      "id": "30th-battle-deck",
+      "name": "30th Celebration Battle Deck—Espeon ex & Umbreon ex",
+      "releaseDate": "2026-10-30",
+      "type": "battle-deck",
+      "acquisitionPrice": 19.99,
+      "acquisitionPriceBasis": "published US MSRP; verify at checkout",
+      "sources": {
+        "tcgplayer": { "skuId": null },
+        "ebay": { "query": "Pokemon 30th Celebration Battle Deck Espeon Umbreon sealed" }
+      }
+    },
+    {
+      "id": "30th-ditto-premium",
+      "name": "30th Celebration Ditto Premium Collection",
+      "releaseDate": "2026-11-06",
+      "type": "premium-collection",
+      "acquisitionPrice": null,
+      "acquisitionPriceBasis": "published prices conflict between 39.99 and 49.99; verify retailer price",
+      "sources": {
+        "tcgplayer": { "skuId": null },
+        "ebay": { "query": "Pokemon 30th Celebration Ditto Premium Collection sealed" }
+      }
+    },
+    {
+      "id": "30th-upc-day-night",
+      "name": "30th Celebration Ultra-Premium Collection—Day & Night",
+      "releaseDate": "2026-11-06",
+      "type": "ultra-premium-collection",
+      "acquisitionPrice": 179.99,
+      "acquisitionPriceBasis": "published US MSRP; verify at checkout",
+      "sources": {
+        "tcgplayer": { "skuId": null },
+        "ebay": { "query": "Pokemon 30th Celebration Ultra Premium Collection Day Night sealed" }
+      }
+    },
+    {
+      "id": "30th-figure-mew-mewtwo",
+      "name": "30th Celebration Figure Collection—Mew & Mewtwo",
+      "releaseDate": "2026-11-06",
+      "type": "figure-collection",
+      "acquisitionPrice": 29.99,
+      "acquisitionPriceBasis": "published US MSRP; verify at checkout",
+      "sources": {
+        "tcgplayer": { "skuId": null },
+        "ebay": { "query": "Pokemon 30th Celebration Figure Collection Mew Mewtwo sealed" }
+      }
+    },
+    {
+      "id": "30th-binder-collection",
+      "name": "30th Celebration Binder Collection",
+      "releaseDate": "2026-12-04",
+      "type": "binder-collection",
+      "acquisitionPrice": 31.99,
+      "acquisitionPriceBasis": "published US MSRP; verify at checkout",
+      "sources": {
+        "tcgplayer": { "skuId": null },
+        "ebay": { "query": "Pokemon 30th Celebration Binder Collection sealed" }
+      }
+    }
+  ]
+}

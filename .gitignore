@@ -1,0 +1,33 @@
+# Dependencies and local tooling
+node_modules/
+.DS_Store
+*.log
+
+# Credentials and machine-local operator configuration. Commit only the
+# corresponding *.example files.
+.env
+.env.*
+!.env.example
+config/scalper-accounts.json
+config/scalper-discord.json
+config/*.local.json
+
+# Runtime state is deliberately never versioned. It can contain authenticated
+# browser profiles, cookies, account metadata, captured responses, databases,
+# logs, purchase state, and operator evidence.
+data/**
+!data/scalper/
+!data/scalper/.gitkeep
+
+# Common credential/export formats are blocked defensively even outside data/.
+*.har
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+*.backup
+*.trace.zip

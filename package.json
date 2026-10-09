@@ -1,0 +1,52 @@
+{
+  "name": "pokemon-scalper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "test": "node --experimental-sqlite --test --test-timeout=120000 'tests/**/*.test.mjs'",
+    "security:scan": "node scripts/check-secrets.mjs",
+    "verify": "npm test && npm run security:scan && npm run scalper:doctor && npm run scalper:smoke",
+    "browsers": "npx playwright install chrome",
+    "scalper:dry": "node src/scalper/cli.mjs dry",
+    "scalper:health": "node src/scalper/cli.mjs health",
+    "scalper:doctor": "node src/scalper/doctor.mjs",
+    "scalper:smoke": "node src/scalper/smoke.mjs",
+    "scalper:e2e": "node src/scalper/e2e.mjs",
+    "scalper:simulate": "node src/scalper/simulation.mjs",
+    "scalper:replay": "node src/scalper/replay.mjs",
+    "scalper:measure": "node src/scalper/measurement.mjs",
+    "scalper:capture": "node src/scalper/capture-contract.mjs",
+    "scalper:login": "node src/scalper/browser-session.mjs",
+    "scalper:ledger": "node src/scalper/ledger-cli.mjs",
+    "scalper:tasks": "node src/scalper/task-cli.mjs",
+    "scalper:market": "node src/scalper/market-cli.mjs",
+    "scalper:market:cycle": "node src/scalper/market-cycle.mjs",
+    "scalper:discover": "node src/scalper/discovery-cycle.mjs",
+    "scalper:discover:serve": "node src/scalper/discovery-service.mjs",
+    "scalper:ingest": "node src/scalper/signal-import.mjs",
+    "scalper:operations": "node src/scalper/operations-cycle.mjs",
+    "scalper:burn-in": "node src/scalper/burn-in.mjs",
+    "scalper:canary": "node src/scalper/canary-readiness.mjs",
+    "scalper:recipe": "node src/scalper/recipe-generator.mjs",
+    "scalper:secret": "node src/scalper/vault-cli.mjs",
+    "scalper:serve": "node src/scalper/serve.mjs",
+    "scalper:install": "node src/scalper/install.mjs",
+    "scalper:backup": "node src/scalper/backup.mjs",
+    "scalper:release": "node src/scalper/release.mjs",
+    "scalper:inventory": "node src/scalper/inventory-scanner.mjs",
+    "scalper:watch": "node src/scalper/cli.mjs watch",
+    "scalper:pc": "node src/scalper/cli.mjs pc",
+    "scalper:tcp": "node src/scalper/cli.mjs tcp",
+    "scalper:bb": "node src/scalper/cli.mjs bb",
+    "scalper:tgt": "node src/scalper/cli.mjs tgt",
+    "scalper:discord": "node src/scalper/cli.mjs discord"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "playwright": "^1.50.0"
+  }
+}

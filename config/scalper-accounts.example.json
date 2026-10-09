@@ -1,0 +1,45 @@
+{
+  "pokemon-center": [
+    {
+      "id": "pc-1",
+      "email": "replace-me@example.invalid",
+      "password": "keychain:PC1_PASS",
+      "card": {
+        "brand": "replace-me",
+        "last4": "0000",
+        "secret": "keychain:PC1_CARD"
+      },
+      "address": {
+        "street": "replace-me",
+        "city": "replace-me",
+        "state": "XX",
+        "zip": "00000"
+      },
+      "sessionFile": "data/scalper/sessions/pc-1.json"
+    }
+  ],
+  "tcgplayer": [
+    {
+      "id": "tcp-1",
+      "email": "replace-me@example.invalid",
+      "password": "keychain:TCP1_PASS",
+      "sessionFile": "data/scalper/sessions/tcp-1.json"
+    }
+  ],
+  "bestbuy": [
+    {
+      "id": "bb-1",
+      "email": "replace-me@example.invalid",
+      "password": "keychain:BB1_PASS",
+      "sessionFile": "data/scalper/sessions/bb-1.json"
+    }
+  ],
+  "target": [
+    {
+      "id": "tgt-1",
+      "email": "replace-me@example.invalid",
+      "password": "keychain:TGT1_PASS",
+      "sessionFile": "data/scalper/sessions/tgt-1.json"
+    }
+  ]
+}

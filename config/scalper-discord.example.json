@@ -1,0 +1,28 @@
+{
+  "mode": "bot-token",
+  "token": "env:SCALPER_DISCORD_BOT_TOKEN",
+  "guildId": "replace-me-guild-id",
+  "categoryIds": [],
+  "channelIds": [],
+  "authorIds": [],
+  "monitorChannelIds": [],
+  "officialChannelIds": [],
+  "channelRoutes": {
+    "replace-me-news-channel-id": "news",
+    "replace-me-pokemon-center-channel-id": "pokemon-center",
+    "replace-me-target-channel-id": "target"
+  },
+  "stores": ["pokemon-center", "tcgplayer", "bestbuy", "target"],
+  "patterns": [
+    {
+      "regex": "(drop|restock|release|available|in stock|just dropped).{0,80}(pokemon|tcg|booster|etb|sealed|prismatic|surprise)",
+      "flags": "i",
+      "action": "parse"
+    },
+    {
+      "regex": "(\\d{1,2}:\\d{2}\\s*(am|pm)?).{0,40}(pokemon|target|bestbuy|tcgplayer)",
+      "flags": "i",
+      "action": "parse_time"
+    }
+  ]
+}
